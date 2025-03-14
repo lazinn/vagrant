@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
     config.vm.define "vm-dockge" do |vmdockge|
      vmdockge.vm.hostname = "vm-dockge"
      vmdockge.vm.network "private_network", ip: "192.168.60.10"
-     vmdockge.vm.network "forwarded_port", guest: 80, host: 90
+     vmdockge.vm.network "forwarded_port", guest: 5001, host: 5001
     
      # Maschine 1 install docker
      vmdockge.vm.provision "shell", inline: <<-SHELL
