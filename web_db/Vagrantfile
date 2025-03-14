@@ -51,8 +51,8 @@ Vagrant.configure("2") do |config|
      cd /home/vagrant
      git clone https://github.com/lazinn/vagrant.git
      cd vagrant/Dateien/web_db
-     chmod +x db_setup.sh
-     ./db_setup.sh
+     chmod +x createdb.sh
+     ./createdb.sh
      SHELL
     end
    end
