@@ -27,7 +27,6 @@ Vagrant.configure("2") do |config|
      apt-get install apache2 -y
      cd /home/vagrant
      git clone https://github.com/lazinn/vagrant.git
-     sleep 20
      cd vagrant/Dateien/web_db
      rm /var/www/html/index.html
      mv index.php /var/www/html/
